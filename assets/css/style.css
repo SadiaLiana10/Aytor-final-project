@@ -592,8 +592,7 @@ footer .footerThird p{
 
 /* product */
 #product img{
-    height: 100%;
-    width: 100%;
+  border: 3px solid #FF6F61;
 }
 #product .product_card{
     position: relative;
@@ -603,12 +602,15 @@ footer .footerThird p{
     background-color: #161d277d;
     color: var(--white-clr);
     inset: 2rem ;
-    padding: 5rem;
+    /* padding: 5rem; */
     justify-content: center;
     align-items: center;
     opacity: 0;
     transition: 0.7s;
     transform-origin: left top;
+    /* height: 100%;
+    width: 100%; */
+    
     transform: scale(0) rotate(0deg) skew(50deg);
 
 }
@@ -635,8 +637,7 @@ footer .footerThird p{
     display: inline-block;
    
 }
-#product .third{
-}
+
 #product .third img{
     height: 62.4rem;
     object-fit: cover;
