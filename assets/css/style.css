@@ -650,6 +650,48 @@ footer .footerThird p{
     text-align: center;
     color: var(--icon-color);
 }
+/* arrival ends */
+
+/* cosmetic */
+
+
+#cosmetic .image{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+    object-fit: cover;
+    height: 52.4rem;
+}
+
+#cosmetic .container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+}
+#cosmetic .container .cosmetic_info{
+    width: 42rem;
+    
+}
+#cosmetic h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    color:var(--white-clr);
+    margin-bottom: 1rem;
+}
+#cosmetic .container p{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color:var(--white-clr);
+    margin-bottom: 3rem;
+}
+
+/* cosmetic ends */
 
 
 
