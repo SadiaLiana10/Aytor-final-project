@@ -597,20 +597,16 @@ footer .footerThird p{
 }
 #product .product_card .overlay{
     position: absolute;
-    background-color: #161d277d;
+    background-color: hsla(215, 28%, 12%, 0.4);
     color: var(--white-clr);
     inset: 2rem ;
     display: flex;
     flex-direction: column;
-    /* padding: 5rem; */
     justify-content: center;
     align-items: center;
     opacity: 0;
     transition: 0.7s;
     transform-origin: left top;
-    /* height: 100%;
-    width: 100%; */
-    
     transform: scale(0) rotate(0deg) skew(50deg);
 
 }
