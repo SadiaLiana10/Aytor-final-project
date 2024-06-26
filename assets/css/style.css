@@ -591,9 +591,7 @@ footer .footerThird p{
 /* footer ends */
 
 /* product */
-#product img{
-  border: 3px solid #FF6F61;
-}
+
 #product .product_card{
     position: relative;
 }
@@ -602,6 +600,8 @@ footer .footerThird p{
     background-color: #161d277d;
     color: var(--white-clr);
     inset: 2rem ;
+    display: flex;
+    flex-direction: column;
     /* padding: 5rem; */
     justify-content: center;
     align-items: center;
@@ -639,9 +639,11 @@ footer .footerThird p{
 }
 
 #product .third img{
-    height: 62.4rem;
+    height: 100%;
     object-fit: cover;
-    border:3px solid #FF6F61;
+}
+#product .product_test{
+    margin: 0 !important;
 }
 /* arrival */
 #arrival h2{
