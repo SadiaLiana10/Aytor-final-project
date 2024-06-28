@@ -99,8 +99,8 @@ $(function(){
     $('.latest').slick({
       slidesToShow: 4,
       slidesToScroll: 1,
-      autoplay: true,  
-      autoplaySpeed: 2000,
+      // autoplay: true,  
+      // autoplaySpeed: 2000,
       arrows:false,
       dots:true,
       
@@ -112,6 +112,13 @@ $(function(){
             slidesToScroll: 3,
             infinite: true,
             dots: true
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
           }
         },
         {
