@@ -6,6 +6,7 @@
     --footer-color:#11161E;
     --white-clr:#FFFFFF;
     --paragraph-color:#444444;
+    --bg-clr:#F1F1F1;
 }
 *{
     margin: 0;
@@ -707,13 +708,59 @@ footer .footerThird p{
 }
 /* ARRIVAL ENDS */
 /* BEAUTY */
-#beauty .beauty{
-    background-color: #000;
-    color: #fff;
-    height: 100%;
+#beauty{
+    position: relative;
+    height: 52rem;
+    background-color:var(--bg-clr) ;
 }
+#beauty .image img{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+}
+#beauty .row{
+    height: 52rem;
+}
+#beauty .row .contains{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 41.7rem;
+}
+#beauty button{
+    border: none;
+}
+#beauty h5{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--paragraph-color);
+}
+#beauty h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    color: var(--text-color);
+    padding: 1rem 0;
+}
+#beauty p{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--paragraph-color);
+    margin-bottom: 3rem;
+}
+#beauty .details span{
+    margin-left: 0.5rem;
+}
+
+
 /* BEAUTY ENDS*/
-/*  */
+
 /* LATEST */
 #latest .slick-track{
    padding: 20px 0;
