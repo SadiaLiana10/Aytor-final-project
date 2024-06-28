@@ -770,6 +770,9 @@ footer .footerThird p{
 #latest a:hover{
     color: var(--cmn-clr);
 }
+#latest .modify{
+    margin-left: 0.5rem;
+}
 
 #latest .slick-dots{
     display: flex;
@@ -785,6 +788,9 @@ footer .footerThird p{
     margin-right:0.5rem;
     border-radius: 8px;
 
+}
+#latest .slick-dots li{
+    box-shadow: none;
 }
 #latest .slick-active button{
     background-color: #ccc;
