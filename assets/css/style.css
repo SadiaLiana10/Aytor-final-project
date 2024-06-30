@@ -7,6 +7,7 @@
     --white-clr:#FFFFFF;
     --paragraph-color:#444444;
     --bg-clr:#F1F1F1;
+    --tool-clr:#151A32;
 }
 *{
     margin: 0;
@@ -627,9 +628,11 @@ footer .footerThird p{
 #product .product_test{
     margin: 0 !important;
 }
-/* arrival */
+
+/* arrival  */
 #arrival{
-    padding: 100px 0;
+    padding:11.2rem 0 10rem 0;
+    position: relative;
 }
 #arrival h2{
     font-weight: 700;
@@ -637,12 +640,168 @@ footer .footerThird p{
     line-height: 128%;
     text-align: center;
     color: var(--icon-color);
+    margin-bottom: 2.4rem;
+}
+#arrival .sub_arrivals{
+    position: relative;
+    border: 1px solid #F1F3F4;
+    padding-bottom: 2.4rem;
+}
+#arrival .slick-slide{
+    padding:0 1.2rem;
+}
+#arrival .sub_arrivals .arrival_images{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#arrival .sub_arrivals .arrival_images img:first-child{
+    width: 100%;
+    position: absolute;
+    transform: scale(1);
+    transition: 0.5s;
+}
+#arrival .sub_arrivals:hover .arrival_images img:first-child{
+    opacity: 0;
+    transform: scale(1.5);
+  
+}
+#arrival .sub_arrivals .arrival_images img{
+    width: 100%;
+}
+#arrival .sub_arrivals .arrival_contents{
+    text-align: center;
+    user-select: text;
+}
+#arrival .sub_arrivals .arrival_contents h4{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 156%;
+    text-align: center;
+    color: var(--icon-color);
+    margin-bottom: 1.1rem;
+}
+#arrival .sub_arrivals .arrival_contents .price{
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 162%;
+    color: var(--paragraph-color);
+    margin: 2.4rem 0 0.5rem;
+    display: inline-block;
+}
+#arrival .sub_arrivals .arrival_contents .star{
+    color: var(--cmn-clr);
+}
+#arrival .sub_arrivals .discount{
+    position: absolute;
+    top: 0;
+    left: 2.5rem;
+    width: 2.6rem;
+    height: 5.2rem;
+    transform: rotate(-180deg);
+    background-color: var(--cmn-clr);
+    border-top-right-radius:1.3rem ;
+    border-top-left-radius:1.3rem ;
+}
+#arrival .sub_arrivals .discount span{
+    color: var(--white-clr);
+    font-size: 1.6rem;
+    transform: rotate(90deg) translateX(40%) translateY(24%);
+    display: inline-block;
+}
+#arrival .sub_arrivals .icons{
+    position: absolute;
+    right: 5rem;
+    top: 6rem;
+}
+#arrival .sub_arrivals .icons li a{
+    width: 3.6rem;
+    height: 3.6rem;
+    background-color: var(--white-clr);
+    color: #000;
+    display: inline-block;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 3.8rem;
+    font-size: 1.8rem;
+    border-radius: 50%;
+    transition: 0.3s;
+    opacity: 0;
+}
+.custom-tooltip {
+    --bs-tooltip-bg: var(--tool-clr);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 167%;
+    text-align: center;
+ }
+#arrival .sub_arrivals .icons li a:hover{
+    background-color: var(--cmn-clr);
+    color: var(--white-clr);
+}
+#arrival .sub_arrivals:hover .icons li a{
+    transform: translateX(3rem);
+    opacity: 1;
+    
+}
+#arrival .sub_arrivals .icons li:nth-child(1) a{
+    transition-delay:0.1s;
+}
+#arrival .sub_arrivals .icons li:nth-child(2) a{
+    transition-delay:0.2s; 
+}
+#arrival .sub_arrivals .icons li:nth-child(3) a{
+    transition-delay:0.3s; 
+}
+#arrival .sub_arrivals .icons li:nth-child(4) a{
+    transition-delay:0.4s; 
+}
+#arrival .right{
+    width:30px;
+    height:50px;
+    cursor: pointer;
+    display: inline-block;
+    background-color: #151A32;
+    color: var(--white-clr);
+    opacity: 0.5;
+    z-index:55;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top:50%;
+    right: -1.5rem;
+    transform: translate(-50%,-50%);
+    transition: 0.2s;
+}
+#arrival .right:hover{
+    background-color: var(--cmn-clr);
+    opacity: 1;
+}
+#arrival .left{
+    width:30px;
+    height:50px;
+    cursor: pointer;
+    display: inline-block;
+    background-color: #151A32;
+    color: var(--white-clr);
+    opacity: 0.5;
+    z-index:55;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top:50%;
+    left: -1.5rem;
+    transform: translate(50%,-50%);
+    transition: 0.2s;
+}
+#arrival .left:hover{
+    background-color: var(--cmn-clr);
+    opacity: 1;
 }
 /* arrival ends */
 
 /* cosmetic */
-
-
 #cosmetic .image{
     background-repeat: no-repeat;
     background-size: cover;
@@ -677,38 +836,10 @@ footer .footerThird p{
 }
 
 /* cosmetic ends */
-#arrival .single_arrival{
-    padding: 0 5px;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
-    border: 1px solid red;
-    
-}
-#arrival .single_arrival img{
-    height: 100%;
-}
-#arrival .single_arrival .price{
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 162%;
-    color: var(--paragraph-color);
-}
-#arrival .single_arrival h4{
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 156%;
-    text-align: center;
-    color: var(--text-color);
-}
-#arrival .single_arrival .reating span{
-  color: var(--cmn-clr);
-  width: 1.2rem;
-  height: 1rem;
-}
-/* ARRIVAL ENDS */
+
+ 
 /* BEAUTY */
-#beauty{
+/* #beauty{
     position: relative;
     height: 52rem;
     background-color:var(--bg-clr) ;
@@ -717,11 +848,19 @@ footer .footerThird p{
     position: absolute;
     right: 0;
     top: 0;
+    width: 50%;
     height: 100%;
     object-fit: cover;
 }
 #beauty .row{
     height: 52rem;
+}
+#beauty .image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
 }
 #beauty .row .contains{
     display: flex;
@@ -756,10 +895,12 @@ footer .footerThird p{
 }
 #beauty .details span{
     margin-left: 0.5rem;
-}
+} */
 
 
 /* BEAUTY ENDS*/
+
+
 
 /* LATEST */
 #latest .slick-track{

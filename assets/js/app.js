@@ -55,13 +55,15 @@ $(function(){
 
 
     //* ARRIVALS JS 
-    $('.arrivals').slick({
+    $('.parent_arrivals').slick({
         dots: false,
         infinite: true,
         speed: 300,
         slidesToShow: 4,
         slidesToScroll: 1,
-        arrows:false,
+        arrows:true,
+        prevArrow: '<span class="left"><i class="fa-solid fa-chevron-left"></i></span>',
+        nextArrow:'<span class="right"><i class="fa-solid fa-chevron-right"></i></span>',
         responsive: [
           {
             breakpoint: 1024,
@@ -69,7 +71,7 @@ $(function(){
               slidesToShow: 3,
               slidesToScroll: 3,
               infinite: true,
-              dots: true
+              dots: false
             }
           },
           {
@@ -86,16 +88,20 @@ $(function(){
               slidesToScroll: 1
             }
           }
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
+
         ]
       });
     //* ARRIVALS JS END
 
+    //tooltip 
+
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    //tooltip ends
+
    
       
-
+      // latest
     $('.latest').slick({
       slidesToShow: 4,
       slidesToScroll: 1,
@@ -141,6 +147,8 @@ $(function(){
    
 
 })
+// latest ends
+
 
 
 
