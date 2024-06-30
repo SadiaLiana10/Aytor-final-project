@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./assets/css/all.min.css"/>
     <!-- SLICK SLIDER -->
     <link rel="stylesheet" href="./assets/css/slick.min.css"/>
+    <!-- TIMER CSS -->
+    
     <!-- BOOTSTRAP -->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- CUSTOM STYLE -->
@@ -497,6 +499,34 @@
       </div>
      </section>
     <!-- cosmetic ends -->
+
+     <!-- DEALS START -->
+      <section id="deal">
+        <div class="container">
+          <div class="countdown py-5">
+            <div id="countdown-active"></div>
+
+
+          </div>
+          <div class="deal_card py-5">
+            <div class="deal_img">
+              <img class="img-fluid images" src="./assets/img/deals/deal.png" alt="">
+              <div class="deal_info">
+
+              </div>
+             
+            </div>
+            <div class="deal_img">
+              <img class="img-fluid images" src="./assets/img/deals/deal2.png" alt="">
+              <div class="deal_info">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     <!-- DEALS ENDS -->
+
      <!-- beauty -->
       <!-- <section id="beauty">
         <div class="container">
@@ -737,9 +767,19 @@
      <script src="./assets/js/all.min.js"></script>
     <!-- SLICK SLIDER -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+     <!--TIMER JS -->
+    <script src="./assets/js/jquery.countdown.min.js"></script>
+    <script type="text/javascript">
+      $('#countdown-active').countdown('2024/07/29', function(event) {
+        $(this).html(event.strftime('days %H:%M:%S'));
+        $(this).html(event.strftime('<div class="single-countdown"><h2>%D</h2><span>Days</span></div> <div class="single-countdown"><h2>%H</h2><span>Hours</span></div><div class="single-countdown"><h2>%M</h2><span>Months</span></div> <div class="single-countdown-no"><h2>%S</h2><span>Seconds</span></div>'));
+      });
+    </script>
     <!-- BOOTSTRAP -->
      <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <!-- CUSTOM JS -->
      <script src="./assets/js/app.js"></script>
+    
+
 </body>
 </html>

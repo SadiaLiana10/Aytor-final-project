@@ -900,6 +900,53 @@ footer .footerThird p{
 
 /* BEAUTY ENDS*/
 
+/* DEAL  */
+ .countdown{
+    display: flex;
+    justify-content: center;
+ }
+#countdown-active{
+    justify-content: center; 
+    background-color: var(--white-clr);
+    width: 42.4rem;
+    border-radius: 4rem;
+    text-align: center;
+    box-shadow: 0 0 70px 0 rgba(21, 26, 50, 0.08);
+    padding:0.7rem 7.4rem;
+    font-weight: 700;
+    /* font-size: 24px; */
+    /* line-height: 142%; */
+    color: var(--icon-color);
+}
+.single-countdown,.single-countdown-no{
+    width: 6rem;
+    display: inline-block;
+    position: relative;
+    margin-right:0.5rem;
+}
+.single-countdown::after{
+    position: absolute;
+    content: ":";
+    top: 0;
+    right:0% ;
+    font-size: 4rem;
+    transform: translate(5px,-10px);
+    color: var(--cmn-clr);
+}
+.deal_img{
+    padding:0 3.2rem;
+    width: 60.8rem;
+}
+.deal_img img .images{
+    width: 100%;
+    object-fit: cover;
+    height: 48.5rem;
+}
+.deal_card{
+    width:1320px;
+    background-color: #FF6F61;
+}
+ /* DEAL ENDS */
 
 
 /* LATEST */
