@@ -1135,4 +1135,134 @@ footer .footerThird p{
 
 /* LATEST END */
 
+/* best */
+#best{
+    padding:11.2rem 0 10rem 0;
+    position: relative;
+}
+#best h2{
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 128%;
+    text-align: center;
+    color: var(--icon-color);
+    margin-bottom: 3.6rem;
+}
+#best .best_seller{
+    position: relative;
+    border: 1px solid #F1F3F4;
+    padding-bottom: 2.4rem;
+}
+
+#best .best_seller .best_images{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#best .best_seller .best_images img:first-child{
+    width: 100%;
+    position: absolute;
+    transform: scale(1);
+    transition: 0.5s;
+}
+#best .best_seller:hover .best_images img:first-child{
+    opacity: 0;
+    transform: scale(1.5);
+  
+}
+#best .best_seller .best_images img{
+    width: 100%;
+}
+#best .best_seller .best_contents{
+    text-align: center;
+    user-select: text;
+}
+#best .best_seller .best_contents h4{
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 156%;
+    text-align: center;
+    color: var(--icon-color);
+    margin-bottom: 1.1rem;
+}
+#best .best_seller .best_contents .price{
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 162%;
+    color: var(--paragraph-color);
+    margin: 2.4rem 0 0.5rem;
+    display: inline-block;
+}
+#best .best_seller .best_contents .star{
+    color: var(--cmn-clr);
+}
+#best .best_seller .discount{
+    position: absolute;
+    top: 0;
+    left: 2.5rem;
+    width: 2.6rem;
+    height: 5.2rem;
+    transform: rotate(-180deg);
+    background-color: var(--cmn-clr);
+    border-top-right-radius:1.3rem ;
+    border-top-left-radius:1.3rem ;
+}
+#best .best_seller .discount span{
+    color: var(--white-clr);
+    font-size: 1.6rem;
+    transform: rotate(90deg) translateX(40%) translateY(24%);
+    display: inline-block;
+}
+#best .best_seller .icons{
+    position: absolute;
+    right: 5rem;
+    top: 6rem;
+}
+#best .best_seller .icons li a{
+    width: 3.6rem;
+    height: 3.6rem;
+    background-color: var(--white-clr);
+    color: #000;
+    display: inline-block;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 3.8rem;
+    font-size: 1.8rem;
+    border-radius: 50%;
+    transition: 0.3s;
+    opacity: 0;
+}
+.custom-tooltip {
+    --bs-tooltip-bg: var(--tool-clr);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 167%;
+    text-align: center;
+ }
+ #best .best_seller .icons li a:hover{
+    background-color: var(--cmn-clr);
+    color: var(--white-clr);
+}
+#best .best_seller:hover .icons li a{
+    transform: translateX(3rem);
+    opacity: 1;
+    
+}
+#best .best_seller .icons li:nth-child(1) a{
+    transition-delay:0.1s;
+}
+#best .best_seller .icons li:nth-child(2) a{
+    transition-delay:0.2s; 
+}
+#best .best_seller .icons li:nth-child(3) a{
+    transition-delay:0.3s; 
+}
+#best .best_seller .icons li:nth-child(4) a{
+    transition-delay:0.4s; 
+}
+
+
+/* best */
+
 
