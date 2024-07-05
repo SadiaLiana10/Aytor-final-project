@@ -28,9 +28,29 @@
 @media (max-width: 991.98px){
  #today .today_img{
   width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
  }
- #today .container{
- 
+ #today{
+  position: relative;
+  outline:1px solid red;
+  padding: 5rem;
+ }
+ #today .contains{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 33;
+  background-color: #fff;
+  padding:8rem;
+ }
+ #today .today_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
  }
 
 }
