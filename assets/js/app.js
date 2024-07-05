@@ -191,7 +191,20 @@ new VenoBox({
   selector: '.explore',
 });
 // today venobox
+  
+// counter
 
+$(function(){
+  
+  $('.counter_parent').slick({
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows:false
+  });
+  });
+
+// counter ends
 
 
 

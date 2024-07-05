@@ -748,6 +748,98 @@
       <!-- best seller ends -->
 
      <!-- DEALS START -->
+     <section id="timer">
+      <div class="container">
+         <div class="shadow_test">
+          <div class="counter_wrapper">
+            <ul id="count_active">
+               <li class="single_counter">
+                 <h2 class="days">00</h2>
+                 <span class="days_text">Days</span>
+               </li>
+               <li class="single_counter">
+                 <h2 class="hr">01</h2>
+                 <span class="days_text">Hours</span>
+               </li>
+               <li class="single_counter">
+                 <h2 class="min">02</h2>
+                 <span class="days_text">Mins</span>
+               </li>
+               <li>
+                 <h2 class="sec">03</h2>
+                 <span class="days_text ">Sec</span>
+               </li>
+            </ul>
+         </div>
+ 
+         <div class="counter_parent">
+          
+           <div class="counter_child" style="background-image: url(./assets/img/deals/timer.png);">
+           
+              <div class="sub_sub_child">
+                 <h4>Fairness Cream</h4>
+                 <h1>Get Up To 35% Off</h1>
+                 <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+                 <span>$256.35</span>
+                 <span class="change"><del>$356.35</del></span>
+                 <div class="timer">
+                  <a href="#">Shop now</a>
+                 </div>
+              </div>
+           </div>
+  
+ 
+           
+           <div class="counter_child" style="background-image: url(./assets/img/deals/timer2.png);">
+      
+              <div class="sub_sub_child">
+                 <h4>Fairness Cream</h4>
+                 <h1>Get Up To 35% Off</h1>
+                 <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+                 <span>$256.35</span>
+                 <span class="change"><del>$356.35</del></span>
+                 <div class="timer">
+                  <a href="#">Shop now</a>
+                 </div>
+              </div>
+           </div>
+  
+ 
+            <div class="counter_child" style="background-image: url(./assets/img/deals/timer3.png);">
+              <div class="sub_sub_child">
+                 <h4>Fairness Cream</h4>
+                 <h1>Get Up To 35% Off</h1>
+                 <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+                 <span>$256.35</span>
+                 <span class="change"><del>$356.35</del></span>
+                 <div class="timer">
+                  <a href="#">Shop now</a>
+                 </div>
+              </div>
+           </div>
+  
+ 
+           <div class="counter_child" style="background-image: url(./assets/img/deals/timer1.png);">
+              <div class="sub_sub_child">
+                 <h4>Fairness Cream</h4>
+                 <h1>Get Up To 35% Off</h1>
+                 <p>Competently target best-of-breed value without transparent e-commerce. Dramatically procrastin ate fully tested relationships.</p>
+                 <span>$256.35</span>
+                 <span class="change"><del>$356.35</del></span>
+                 <div class="timer">
+                  <a href="#">Shop now</a>
+                 </div>
+              </div>
+           </div> 
+
+
+  
+ 
+ 
+         </div>
+         </div>
+      </div>
+     </section>
      <!-- DEALS ENDS -->
 
      <!-- Today -->
@@ -987,12 +1079,21 @@
     <!-- venobox -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/2.1.8/venobox.min.js" integrity="sha512-LvcjoBF1sjBfiAJpi1Vt5pJXcT7A+0BK6nvwYkp0PwL3zNswVsRi3GURZXlRN8o6E9p0pJUJi5vsp6LSqVBzhw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
      <!--TIMER JS -->
-   
+    <script src="./assets/js/jquery.countdown.min (2).js"></script>
     <!-- BOOTSTRAP -->
      <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <!-- CUSTOM JS -->
      <script src="./assets/js/app.js"></script>
     
-
+     <script>
+      $('#count_active').countdown('2025/01/01', function(event) {
+        
+        $('.sec').html(event.strftime('%S'));
+        $('.days').html(event.strftime('%D'));
+        $('.hrs').html(event.strftime('%H'));
+        $('.mins').html(event.strftime('%M'));
+        console.log()
+      });
+     </script>
 </body>
 </html>
