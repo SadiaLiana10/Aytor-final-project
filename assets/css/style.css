@@ -44,6 +44,8 @@ ul{
     line-height: 167%;
     text-align: center;
     display: inline-block;
+    border: none !important;
+    outline: none !important;
 
 }
 
@@ -837,116 +839,210 @@ footer .footerThird p{
 
 /* cosmetic ends */
 
- 
-/* BEAUTY */
-/* #beauty{
+/* DEAL  */
+ /* DEAL ENDS */
+
+ /* TODAY */
+ #today{
     position: relative;
-    height: 52rem;
-    background-color:var(--bg-clr) ;
-}
-#beauty .image img{
+ }
+ #today .today_img{
     position: absolute;
     right: 0;
     top: 0;
     width: 50%;
     height: 100%;
-    object-fit: cover;
-}
-#beauty .row{
-    height: 52rem;
-}
-#beauty .image{
+ }
+ /* img animation */
+ #today .today_img::before{
+    content: '';
     position: absolute;
     top: 0;
+    bottom: 0;
+    left:50%;
+    right: 50%;
+    background-color: rgba(255, 255, 255, 0.421);
+ }
+ #today .today_img:hover::before{
+    left: 0;
     right: 0;
-    width: 50%;
-    height: 100%;
-}
-#beauty .row .contains{
+    opacity: 0;
+    transition: 900ms linear;
+ }
+ #today .today_img::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left:0;
+    right:0;
+    background-color: rgba(255, 255, 255, 0.421);
+ }
+ #today .today_img:hover::after{
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: 900ms linear;
+ }
+  /* img animation ends*/
+
+  /*today play icon animation */
+ #today .today_img a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: var(--white-clr);
+    transform: translate(-50%,-50%);
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-content: center;
-    width: 41.7rem;
-}
-#beauty button{
-    border: none;
-}
-#beauty h5{
+    font-size: 2.5rem;
+    color: var(--cmn-clr);
+    z-index: 22;
+ }
+ #today .today_img a::before{
+    content: '';
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    background-color: var(--white-clr);
+    left: 0;
+    top: 0;
+    z-index: -11;
+    border-radius: 50%;
+    animation: animate_1 2s linear infinite;
+ }
+
+ @keyframes animate_1 {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    30%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+    
+ }
+ #today .today_img a::after{
+    content: '';
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    background-color: var(--white-clr);
+    left: 0;
+    top: 0;
+    z-index: -11;
+    border-radius: 50%;
+    animation: animate_2 2s linear infinite;
+ }
+
+ @keyframes animate_2 {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    30%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(1.7);
+        opacity: 0;
+    }
+    
+ }
+   /* today play icon animation ends*/
+ #today .today_img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+ }
+ #today .container{
+    padding:11.5rem 23.5rem 11.5rem 0;
+ }
+ #today h4{
     font-weight: 400;
     font-size: 16px;
     line-height: 162%;
     color: var(--paragraph-color);
-}
-#beauty h2{
+ }
+ #today h2{
     font-weight: 700;
     font-size: 36px;
     line-height: 128%;
     color: var(--text-color);
-    padding: 1rem 0;
-}
-#beauty p{
+    margin:1rem 0;
+ }
+ #today p{
     font-family: var(--second-family);
     font-weight: 400;
     font-size: 16px;
     line-height: 175%;
     color: var(--paragraph-color);
-    margin-bottom: 3rem;
-}
-#beauty .details span{
-    margin-left: 0.5rem;
-} */
-
-
-/* BEAUTY ENDS*/
-
-/* DEAL  */
- .countdown{
-    display: flex;
-    justify-content: center;
  }
-#countdown-active{
-    justify-content: center; 
-    background-color: var(--white-clr);
-    width: 42.4rem;
-    border-radius: 4rem;
-    text-align: center;
-    box-shadow: 0 0 70px 0 rgba(21, 26, 50, 0.08);
-    padding:0.7rem 7.4rem;
-    font-weight: 700;
-    /* font-size: 24px; */
-    /* line-height: 142%; */
-    color: var(--icon-color);
-}
-.single-countdown,.single-countdown-no{
-    width: 6rem;
+ #today .explore span{
+    margin-left: 0.5rem;
     display: inline-block;
+ }
+ /* today button animation */
+ #today .explore{
+    background-color: #000;
+    padding:1.4rem 2.3rem;
+    display: inline-block;
+    font-size: 1.8rem;
+    color: var(--white-clr);
+    margin-top: 3rem;
     position: relative;
-    margin-right:0.5rem;
-}
-.single-countdown::after{
+ }
+ #today .explore::before{
+    content: attr(data-text);
+    padding:1.4rem 2.3rem;
     position: absolute;
-    content: ":";
-    top: 0;
-    right:0% ;
-    font-size: 4rem;
-    transform: translate(5px,-10px);
-    color: var(--cmn-clr);
-}
-.deal_img{
-    padding:0 3.2rem;
-    width: 60.8rem;
-}
-.deal_img img .images{
     width: 100%;
-    object-fit: cover;
-    height: 48.5rem;
-}
-.deal_card{
-    width:1320px;
-    background-color: #FF6F61;
-}
- /* DEAL ENDS */
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--cmn-clr);
+    mask: url(https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png);
+    mask-size: 3000% 100%;
+    animation: animate_4 0.8s backwards steps(29) ;
+ }
+ #today .explore:hover::before{
+    animation: animate_3 0.8s forwards steps(29);
+ }
+ @keyframes animate_3 {
+    0%{
+        mask-position:0 0 ;
+    }
+    100%{
+        mask-position:100% 0 ;
+    }
+    
+ }
+ @keyframes animate_4 {
+    0%{
+        mask-position:100% 0 ;
+    }
+    100%{
+        mask-position:0 0 ;
+    }
+    
+ }
+
+ .fa-arrow-right::before{
+     content: "\f178";
+     position: absolute;
+    
+ }
+ /* today button animation ends */
+
+ /* TODAY ENDS */
 
 
 /* LATEST */

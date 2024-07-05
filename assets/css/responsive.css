@@ -26,18 +26,11 @@
   
 }
 @media (max-width: 991.98px){
-  /* #beauty{
-    background-color: aqua;
-  }
-  #beauty .image{
-    /* width: 100%;
-    top:50%;
-    border: 3px solid red; */
-    position:relative;
-        width: 100%
-  }
-  #beauty .image img{
-    object-fit: cover;
-  } */
+ #today .today_img{
+  width: 100%;
+ }
+ #today .container{
+ 
+ }
 
 }

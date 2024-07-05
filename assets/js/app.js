@@ -185,6 +185,13 @@ $('.deal_card').slick({
 });
 // DEAL ENDS
 
+// today venobox
+
+new VenoBox({
+  selector: '.explore',
+});
+// today venobox
+
 
 
 
