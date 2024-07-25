@@ -74,7 +74,7 @@ $(function(){
               dots: false
             }
           },
-          
+        
           {
             breakpoint: 600,
             settings: {
@@ -151,18 +151,28 @@ $(function(){
 
 // DEAL
 
-$('.deal_card').slick({
+$('.counter_parent').slick({
   dots: true,
   infinite: false,
   speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
+  arrows:false,
+  slidesToShow: 2,
+  slidesToScroll: 2,
   responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
         infinite: true,
         dots: true
       }
@@ -194,15 +204,7 @@ new VenoBox({
   
 // counter
 
-$(function(){
-  
-  $('.counter_parent').slick({
-    infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    arrows:false
-  });
-  });
+
 
 // counter ends
 

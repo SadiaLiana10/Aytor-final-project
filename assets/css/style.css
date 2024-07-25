@@ -36,7 +36,8 @@ ul{
 }
 
 .primary-btn{
-    background-color: var(--cmn-clr);
+    /* background-color: var(--cmn-clr); */
+    background-color: transparent;
     color:#fff;
     padding:1.4rem 2.3rem;
     font-weight: 600;
@@ -44,10 +45,56 @@ ul{
     line-height: 167%;
     text-align: center;
     display: inline-block;
-    border: none !important;
+    border: 1px solid var(--white-clr)!important;
     outline: none !important;
-
+    transition: 0.3s;
 }
+ .explore{
+    background-color: #000;
+    padding:1.4rem 2.3rem;
+    display: inline-block;
+    font-size: 1.8rem;
+    color: var(--white-clr);
+    margin-top: 3rem;
+    position: relative;
+    z-index: 22;
+ }
+  .explore::before{
+    content: '';
+    padding:1.4rem 2.3rem;
+    z-index: -22;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--cmn-clr);
+    mask: url(https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png);
+    mask-size: 3000% 100%;
+    animation: animate_4 0.8s backwards steps(29);
+ }
+.explore:hover::before{
+    animation: animate_3 0.8s forwards steps(29);
+ }
+ @keyframes animate_3 {
+    0%{
+        mask-position:0 0 ;
+    }
+    100%{
+        mask-position:100% 0 ;
+    }
+    
+ }
+ @keyframes animate_4 {
+    0%{
+        mask-position:100% 0 ;
+    }
+    100%{
+        mask-position:0 0 ;
+    }
+    
+ }
+
 
 /* NAV START */
 nav{
@@ -470,6 +517,13 @@ nav .nav-item .submenu li:hover a {
     border-radius: 1rem;
     margin: 0 0.5rem;
 }
+#hero .primary-btn{
+    background-color: var(--cmn-clr);
+}
+#hero .primary-btn:hover{
+    background-color: var(--bg-clr);
+    color: var(--cmn-clr);
+}
 
 /* BANNER END  */
 /* footer */
@@ -578,8 +632,26 @@ footer .footerThird{
 footer .footerThird p{
     margin: 0;
 }
-
+footer .top-card p{
+    color: var(--paragraph-color);
+}
+footer .top-card{
+    background-color: var(--white-clr);
+    transform: translateY(-50%);
+}
+footer .top-card span{
+    font-size: 3rem;
+    color: var(--white-clr);
+    background-color: var(--cmn-clr);
+    width: 6rem;
+    height: 6rem;
+    line-height: 7rem;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+}
 /* footer ends */
+
 
 /* product */
 
@@ -836,6 +908,9 @@ footer .footerThird p{
     color:var(--white-clr);
     margin-bottom: 3rem;
 }
+#cosmetic .primary-btn:hover{
+    background-color: var(--cmn-clr);
+}
 
 /* cosmetic ends */
 
@@ -905,7 +980,6 @@ footer .footerThird p{
     line-height: 156%;
     color: var(--icon-color);
     /* padding-top: 3.5rem; */
-
 }
 #timer  .sub_sub_child h1{
     font-weight: 700;
@@ -913,7 +987,6 @@ footer .footerThird p{
     line-height: 128%;
     color: var(--icon-color);
     margin:1rem 0;
-
 }
 #timer  .sub_sub_child p{
     font-family: var(--second-family);
@@ -937,19 +1010,53 @@ footer .footerThird p{
  }
  #timer .counter_child{
     position: relative;
-    background-repeat: no-repeat;
+     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;  
-    padding:3.5rem 0 13.5rem 4rem ;
+    padding:3.5rem 0 13.5rem 4rem ; 
 }
 
+ #timer .counter_child::after{
+    content:'';
+    position:absolute;
+    top:0;
+    bottom:0;
+    left: 50%;
+    right: 50%;
+    background-color: rgba(255, 255, 255, 0.421);
+}
+#timer .counter_child:hover::after{
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: 900ms linear;
+} 
+#timer .counter_child{
+    position: relative;
+}
+#timer .counter_child::before{
+    content:'';
+    position:absolute;
+    top:50%;
+    bottom:50%;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.421);
+}
+#timer .counter_child:hover::before{
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: 900ms linear;
+} 
+
+#timer .counter_child img{
+   width:100%;
+   height: 100%;
+   object-fit: cover;
+}
 #timer .slick-slide{
     margin:0 2rem;
- }
- #timer .counter_child img{
-    width:100%;
-    height: 100%;
-    object-fit: cover;
  }
  #timer .timer{
     margin-top: 3rem;
@@ -971,6 +1078,22 @@ footer .footerThird p{
     color: var(--paragraph-color);
     margin-left: 1.3rem;
  }
+ #timer .slick-dots button{
+    background-color: #000;
+    color: transparent;
+    border: none;
+    width:1.2rem;
+    height:0.6rem;
+    margin-right:0.5rem;
+    border-radius: 0.8rem;
+ }
+ #timer .slick-dots{
+    display: flex;
+    justify-content: center;
+    margin-top:4rem; 
+
+ }
+
 
  /* DEAL ENDS */
 
@@ -1125,7 +1248,7 @@ footer .footerThird p{
     display: inline-block;
  }
  /* today button animation */
- #today .explore{
+ /* #today .explore{
     background-color: #000;
     padding:1.4rem 2.3rem;
     display: inline-block;
@@ -1147,7 +1270,7 @@ footer .footerThird p{
     background-color: var(--cmn-clr);
     mask: url(https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png);
     mask-size: 3000% 100%;
-    animation: animate_4 0.8s backwards steps(29) ;
+    animation: animate_4 0.8s backwards steps(29);
  }
  #today .explore:hover::before{
     animation: animate_3 0.8s forwards steps(29);
@@ -1169,19 +1292,14 @@ footer .footerThird p{
         mask-position:0 0 ;
     }
     
- }
-
- .fa-arrow-right::before{
-     content: "\f178";
-     position: absolute;
-    
- }
+ } */
  /* today button animation ends */
 
  /* TODAY ENDS */
 
 
 /* LATEST */
+
 #latest .slick-track{
    padding: 20px 0;
 }
@@ -1244,7 +1362,8 @@ footer .footerThird p{
 #latest .slick-dots{
     display: flex;
     justify-content: center;
-    margin-top:4rem; 
+    margin:4rem 0; 
+    
 }
 #latest .slick-dots button{
     border: none;
@@ -1265,8 +1384,39 @@ footer .footerThird p{
     transition: 0.3s;
 }
 
-
-
+/* #latest .cards .images::before{
+    content: '';
+    position: absolute;
+    right:50%;
+    left:50%;
+    bottom:0;
+    top:0;
+    background-color: rgba(255, 255, 255, 0.421);
+}
+#latest .cards .images:hover::before{
+    right:0;
+    left:0;
+    opacity: 0;
+    transition: 900ms linear;
+} */
+#latest .cards{
+    position: relative;
+}
+#latest .latest_parent::after{
+    content:'';
+    position:absolute;
+    top:0;
+    bottom:0;
+    left: 50%;
+    right: 50%;
+    background-color: rgba(255, 255, 255, 0.421);
+}
+#latest .latest_parent:hover::after{
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: 900ms linear;
+} 
 /* LATEST END */
 
 /* best */
@@ -1395,7 +1545,9 @@ footer .footerThird p{
 #best .best_seller .icons li:nth-child(4) a{
     transition-delay:0.4s; 
 }
-
+#best  .explore-btn{
+   text-align: center;
+}
 
 /* best */
 
