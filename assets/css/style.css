@@ -530,6 +530,17 @@ nav .nav-item .submenu li:hover a {
 .footer{
     background-color: var(--footer-color);
 }
+footer .footer-logo img{
+  margin-top:-2rem;
+  margin-bottom: 2rem;
+}
+footer .info{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--paragraph-color);
+}
 .footer .icons a{
     width: 3rem;
     height: 3rem;
@@ -547,13 +558,41 @@ nav .nav-item .submenu li:hover a {
     color: #fff;
 }
 .footerFirst{
-    padding:8rem 0 7.6rem;
+    padding:8rem 0 7.6rem 0;
 } 
+.footerFirst h2{
+    color: var(--white-clr);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+}
+.footerFirst p{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+}
+.footer-info{
+    padding-right:85px;
+}
+.footer-last{
+   background-color: #44444479;
+}
+.footer-last p{
+    margin: 0 !important;
+    padding: 2.5rem 0;
+}
 
 .footerSec{
-    padding-bottom: 7rem;
+    padding:7rem 0;
 }
-   
+footer.footer{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    object-fit: cover;
+}  
 .footerSec h2{
     color: #fff;
     padding-bottom: 2.2rem;
@@ -582,13 +621,19 @@ nav .nav-item .submenu li:hover a {
 }
 footer .btn-group{
     width: 100%;
+    padding: 0 !important;
 }
 footer .btn-group input{
     border-radius: 0;
     padding: 0;
     font-size: 2rem;
-    /* width: 19.8rem; */
     border: none;
+}
+footer .footer-sub input{
+    padding: 16px 0 16px 20px;
+}
+footer .footer-sub button{
+    padding:1.5rem 5rem;
 }
 footer .btn-group input::placeholder{
     font-family: var(--second-family);
@@ -597,8 +642,10 @@ footer .btn-group input::placeholder{
     line-height: 175%;
     color: #8f8f8f;
 }
-footer .btn-group button{
-    padding: 0.5rem;
+footer .footer-button button{
+    padding: 1.2rem 1.7rem;
+}
+footer .btn-group  button{
     border: none;
     background-color: var(--cmn-clr);
     font-weight: 600;
@@ -625,7 +672,7 @@ footer .icon span{
     font-size:1.9rem;
 }
 footer .footerThird{
-    background-color: #444444;
+    background-color: #44444485;
     text-align: center;
     padding: 2.1rem 0;
 }
@@ -1101,6 +1148,7 @@ footer .top-card span{
  #today{
     position: relative;
     background-color: #F1F3F4;
+    margin-bottom: 11.2rem;
  }
  #today .today_img{
     position: absolute;
@@ -1229,6 +1277,22 @@ footer .top-card span{
     line-height: 162%;
     color: var(--paragraph-color);
  }
+ #today .about-today-info h4{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    color: var(--icon-color);
+ }
+ #today .about-today-info p{
+    margin-top: 1rem;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: justify;
+    color: var(--paragraph-color);
+ }
  #today h2{
     font-weight: 700;
     font-size: 36px;
@@ -1325,7 +1389,7 @@ footer .top-card span{
     line-height: 128%;
     text-align: center;
     color: var(--icon-color);
-    padding-top: 11.2rem;
+    /* padding-top: 11.2rem; */
 }
 #latest h3{
     font-weight: 600;
@@ -1548,7 +1612,43 @@ footer .top-card span{
 #best  .explore-btn{
    text-align: center;
 }
+/* best ends */
 
-/* best */
+/* About */
+.about .about-banner{
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top center;
+    object-fit: cover;
+}
+.about .about-info h3{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 121%;
+    text-align: center;
+    color: var(--white-clr);
+    margin-bottom: 1.6rem;
+}
+.about .about-info p{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: center;
+    color: var(--white-clr);
+}
+/* About ends */
+/* TOP CARD */
+  footer .topModify{
+    transform: translateY(0);
+    margin-bottom: 11.2rem;
+  }
+
+/* TOP CARD ENDS */
 
 

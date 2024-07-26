@@ -28,18 +28,6 @@ searchBtn.addEventListener('click', function(e){
 });
 
 $(function(){
-    // $('.bannerSlider').slick({
-    //     arrows:false,
-    //     dots:true,
-    //     dotsClass:'bannerDots container',
-    //     autoplay: true,
-    //     autoplaySpeed: 2000,
-    // })
-    // $('.smallBannerSlider').slick({
-    //     arrows:false,
-    //     autoplay: true,
-    //     autoplaySpeed: 2000,
-    // })
 
     $('.main_slider').slick({
         arrows:false,
@@ -48,11 +36,6 @@ $(function(){
         autoplay: true,
         autoplaySpeed: 1800,
     });
-
-
-
-
-
 
     //* ARRIVALS JS 
     $('.parent_arrivals').slick({
@@ -144,39 +127,74 @@ $(function(){
        
       ]
     });
+    // latest ends
    
 
-})
-// latest ends
-
-// DEAL
-
-$('.counter_parent').slick({
-  dots: true,
-  infinite: false,
+    // DEAL
+    $('.counter_parent').slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+      arrows:false,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+    // DEAL ENDS
+    // expert
+$('.parent_expert').slick({
+  dots: false,
+  infinite: true,
   speed: 300,
-  arrows:false,
-  slidesToShow: 2,
-  slidesToScroll: 2,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  arrows:true,
+  // prevArrow: '<span class="left"><i class="fa-solid fa-chevron-left"></i></span>',
+  // nextArrow:'<span class="right"><i class="fa-solid fa-chevron-right"></i></span>',
   responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         infinite: true,
-        dots: true
+        dots: false
       }
     },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true
-      }
-    },
+  
     {
       breakpoint: 600,
       settings: {
@@ -191,9 +209,14 @@ $('.counter_parent').slick({
         slidesToScroll: 1
       }
     }
+
   ]
 });
-// DEAL ENDS
+
+
+// expert ends
+})
+
 
 // today venobox
 
@@ -202,11 +225,7 @@ new VenoBox({
 });
 // today venobox
   
-// counter
 
-
-
-// counter ends
 
 
 
