@@ -132,9 +132,9 @@ let grid = document.querySelector('.grid_view');
 let list = document.querySelector('.list_view');
 let parentList = document.querySelector('.parent-list');
 
-grid.addEventListener('click', function(){
+list.addEventListener('click', function(){
   parentList.classList.add('active');
-list.addEventListener('click',function(){
+grid.addEventListener('click',function(){
   parentList.classList.remove('active');
 })
 })

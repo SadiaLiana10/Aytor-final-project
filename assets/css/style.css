@@ -1976,10 +1976,10 @@ footer .top-card span{
     transform: scale(1.1);
 }
 #view .parent-list{
-    visibility: hidden;
+    visibility: visible;
 }
 #view .parent-list.active{
-    visibility: visible;
+    visibility: hidden;
 }
 /* VIEW ENDS */
 
