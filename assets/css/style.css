@@ -698,6 +698,7 @@ footer .top-card span{
     display: inline-block;
 }
 
+
 /* footer ends */
 
 
@@ -1974,7 +1975,12 @@ footer .top-card span{
 #view  .sub-list:hover img{ 
     transform: scale(1.1);
 }
-
+#view .parent-list{
+    visibility: hidden;
+}
+#view .parent-list.active{
+    visibility: visible;
+}
 /* VIEW ENDS */
 
 #arrivals{
