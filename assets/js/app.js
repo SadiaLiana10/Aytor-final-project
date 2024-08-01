@@ -1,4 +1,6 @@
+
 $(function(){
+  // shop details slick
   $('.parent_arrival').slick({
     dots: false,
     infinite: true,
@@ -36,10 +38,12 @@ $(function(){
 
     ]
   });
+   // shop details slick ends
 })
 
 
 $(function(){
+  // shop insta
   $('.parent_expert').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -125,19 +129,10 @@ $(function(){
      
     ]
   });
-   
+  //  shop insta ends
 })
 
-let grid = document.querySelector('.grid_view');
-let list = document.querySelector('.list_view');
-let parentList = document.querySelector('.parent-list');
 
-list.addEventListener('click', function(){
-  parentList.classList.add('active');
-grid.addEventListener('click',function(){
-  parentList.classList.remove('active');
-})
-})
 
 
 let crossBtn = document.querySelector('.cross-btn');
@@ -168,6 +163,21 @@ searchBtn.addEventListener('click', function(e){
             inputTest.classList.remove('active_input');
     
 });
+
+
+// let grid = document.querySelector('.grid_view');
+// let list = document.querySelector('.list_view');
+// let parentList = document.querySelector('.parent-list');
+// let best = document.querySelector('.best');
+
+// list.addEventListener('click' ,()=>{
+//   parentList.style.display = "block";
+//   best.style.display = "none";
+// });
+// grid.addEventListener('click' ,()=>{
+//   parentList.style.display = "none";
+//   best.style.display = "block";
+// }); 
 
 $(function(){
 
@@ -333,5 +343,29 @@ new VenoBox({
   
 
 
+
+
+
+
+// $('.slider-for').slick({
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   arrows: false,
+//   fade: true,
+//   asNavFor: '.slider-nav'
+// });
+// $('.slider-nav').slick({
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   asNavFor: '.slider-for',
+//   dots: true,
+//   centerMode: true,
+//   focusOnSelect: true
+// });
+// <div class="your-class">
+//   <div>your content</div>
+//   <div>your content</div>
+//   <div>your content</div>
+// </div>
 
 
