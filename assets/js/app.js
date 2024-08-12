@@ -1,4 +1,7 @@
 
+
+
+
 $(function(){
   // shop details slick
   $('.parent_arrival').slick({
@@ -39,11 +42,20 @@ $(function(){
     ]
   });
    // shop details slick ends
+   var mixer = mixitup('.mix', {
+    load: {
+      filter: '.category-a'
+  }
+  
+});
+
+
 })
 
 
+
+// shop insta
 $(function(){
-  // shop insta
   $('.parent_expert').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -129,16 +141,17 @@ $(function(){
      
     ]
   });
-  //  shop insta ends
 })
 
+  
 
+$(function(){
 
-
-let crossBtn = document.querySelector('.cross-btn');
+  let crossBtn = document.querySelector('.cross-btn');
 let searchBtn = document.querySelector('.search_btn');
 let searchBox = document.querySelector('.search-box');
 let inputTest = document.querySelector('.input-test');
+
 
 searchBox.addEventListener('click',function(e){
     e.preventDefault();
@@ -163,23 +176,6 @@ searchBtn.addEventListener('click', function(e){
             inputTest.classList.remove('active_input');
     
 });
-
-
-// let grid = document.querySelector('.grid_view');
-// let list = document.querySelector('.list_view');
-// let parentList = document.querySelector('.parent-list');
-// let best = document.querySelector('.best');
-
-// list.addEventListener('click' ,()=>{
-//   parentList.style.display = "block";
-//   best.style.display = "none";
-// });
-// grid.addEventListener('click' ,()=>{
-//   parentList.style.display = "none";
-//   best.style.display = "block";
-// }); 
-
-$(function(){
 
     $('.main_slider').slick({
         arrows:false,
@@ -340,11 +336,6 @@ new VenoBox({
   selector: '.explore',
 });
 // today venobox
-  
-
-
-
-
 
 
 // $('.slider-for').slick({
