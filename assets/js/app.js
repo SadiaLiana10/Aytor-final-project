@@ -1,4 +1,22 @@
-
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: false,
+  centerMode: true,
+  centerPadding: '0px',
+  arrows: true,
+  prevArrow: '<span class="left"><i class="fa-solid fa-chevron-left"></i></span>',
+  nextArrow:'<span class="right"><i class="fa-solid fa-chevron-right"></i></span>',
+  focusOnSelect: true
+});
 
 
 

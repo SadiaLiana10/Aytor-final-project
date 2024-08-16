@@ -880,7 +880,7 @@ footer .top-card span{
 #arrival .sub_arrivals .icons li:nth-child(4) a{
     transition-delay:0.4s; 
 }
-#arrival .right{
+#arrival .right, #jacket .right{
     width:30px;
     height:50px;
     cursor: pointer;
@@ -897,11 +897,11 @@ footer .top-card span{
     transform: translate(-50%,-50%);
     transition: 0.2s;
 }
-#arrival .right:hover{
+#arrival .right:hover,#jacket .right:hover{
     background-color: var(--cmn-clr);
     opacity: 1;
 }
-#arrival .left{
+#arrival .left, #jacket .left{
     width:30px;
     height:50px;
     cursor: pointer;
@@ -918,7 +918,7 @@ footer .top-card span{
     transform: translate(50%,-50%);
     transition: 0.2s;
 }
-#arrival .left:hover{
+#arrival .left:hover,#jacket .left:hover{
     background-color: var(--cmn-clr);
     opacity: 1;
 }
@@ -1455,21 +1455,6 @@ footer .top-card span{
     transition: 0.3s;
 }
 
-/* #latest .cards .images::before{
-    content: '';
-    position: absolute;
-    right:50%;
-    left:50%;
-    bottom:0;
-    top:0;
-    background-color: rgba(255, 255, 255, 0.421);
-}
-#latest .cards .images:hover::before{
-    right:0;
-    left:0;
-    opacity: 0;
-    transition: 900ms linear;
-} */
 #latest .cards{
     position: relative;
 }
@@ -2215,3 +2200,28 @@ footer .top-card span{
     background-color: var(--cmn-clr);
     opacity: 1;
 }
+
+/* leather jacket */
+
+#jacket .slider-nav .slick-slide{
+    opacity: 0.5;
+    transform: scale(0.8);
+    padding: 5px;
+}
+#jacket .slider-nav  .slick-center{
+    opacity: 1;
+    transform: scale(1);
+}
+#size,#color{
+    padding:0 10px 0 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--paragraph-color);
+    border: 1px solid #e0e0e0;
+    width: 580px;
+    height: 40px;
+}
+
+
+/* leather jacket ends */
