@@ -1,3 +1,29 @@
+
+$(function(){
+  let dec = document.querySelector(".dec");
+let result = document.querySelector(".result");
+let inc = document.querySelector(".inc");
+
+inc.addEventListener("click", function(){
+    
+    if(result.value < 5){
+        result.value = Number(result.value) + 1;
+        
+    }else{
+        // inc.style.cursor = `not-allowed`
+         alert("You have reached maximum limit")
+    }
+})
+
+dec.addEventListener("click",()=>{
+
+   if(result.value>1){
+    result.value = Number(result.value) - 1
+   }else{
+    dec.style.cursor = `not-allowed`
+   }
+
+})
 $('.slider-for').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -17,6 +43,11 @@ $('.slider-nav').slick({
   nextArrow:'<span class="right"><i class="fa-solid fa-chevron-right"></i></span>',
   focusOnSelect: true
 });
+
+
+})
+
+
 
 
 

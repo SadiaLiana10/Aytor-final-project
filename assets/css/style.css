@@ -8,6 +8,7 @@
     --paragraph-color:#444444;
     --bg-clr:#F1F1F1;
     --tool-clr:#151A32;
+    --border-clr:#E0E0E0;
 }
 *{
     margin: 0;
@@ -2223,5 +2224,33 @@ footer .top-card span{
     height: 40px;
 }
 
+#wrapper button,#wrapper input{
+    border:1px solid var(--border-clr);
+    text-align: center;
+    width:5rem;
+    height:5rem;
+   font-size:large;
+
+}
+#wrapper .btn-group{
+    background-color: var(--bg-clr);
+}
+#jacket .cart a{
+    display: inline-block;
+    color: #000;
+    background-color: var(--cmn-clr);
+    padding:17px 52px;
+
+}
+#jacket .stars span{
+    display: inline-block;
+    width: 50px;
+    height: 48px;
+    line-height: 55px;
+    background-color: #000;
+    color: var(--bg-clr);
+    font-size: 16px;
+    text-align: center;
+}
 
 /* leather jacket ends */
