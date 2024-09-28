@@ -1839,6 +1839,9 @@ footer .top-card span{
 /* About us shop ends */
 
 /* About us profile */
+#test_pro .container{
+    position:relative;
+}
 #test_pro .child_pro .slick-track{
     width:100% !important;
     transform:translate3d(0px,0px,0px) !important;
@@ -1846,13 +1849,16 @@ footer .top-card span{
 #test_pro .child_pro .slick-list{
     overflow: visible !important;
 }
+#test_pro .child_img img{
+    border-radius: 50%;
+}
 #test_pro .child_img{
     width:100px !important;
     height:100px;
     border-radius:50%;
     text-align:center;
     color:white;
-    background-color: red;
+    /* background-color: red; */
 }
 #test_pro .child_pro .one{
     /* background-color: green; */
