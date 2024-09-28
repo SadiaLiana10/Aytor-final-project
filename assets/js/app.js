@@ -1,4 +1,36 @@
 
+
+$(function(){
+  var mixer = mixitup('.mix', {
+    "animation": {
+      "duration": 629,
+      "nudge": false,
+      "reverseOut": false,
+      "effects": "fade translateZ(-57px)"
+  }
+  
+
+
+});
+  $('.parent_pro').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.parent_pro'
+  });
+  $('.child_pro').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.child_pro',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
+  });
+
+  
+})
+
 $(function(){
   let dec = document.querySelector(".dec");
 let result = document.querySelector(".result");
@@ -94,8 +126,7 @@ $(function(){
    var mixer = mixitup('.mix', {
     load: {
       filter: '.category-a'
-  }
-  
+  }  
 });
 
 
@@ -384,28 +415,9 @@ searchBtn.addEventListener('click', function(e){
 new VenoBox({
   selector: '.explore',
 });
+
 // today venobox
+var mixitup = require('mixitup');
 
-
-// $('.slider-for').slick({
-//   slidesToShow: 1,
-//   slidesToScroll: 1,
-//   arrows: false,
-//   fade: true,
-//   asNavFor: '.slider-nav'
-// });
-// $('.slider-nav').slick({
-//   slidesToShow: 3,
-//   slidesToScroll: 1,
-//   asNavFor: '.slider-for',
-//   dots: true,
-//   centerMode: true,
-//   focusOnSelect: true
-// });
-// <div class="your-class">
-//   <div>your content</div>
-//   <div>your content</div>
-//   <div>your content</div>
-// </div>
 
 
