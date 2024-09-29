@@ -2367,4 +2367,7 @@ footer .top-card span{
 #table th{
     vertical-align: middle;
 }
+.compare_addtocart td{
+    padding:12px 0;
+}
 /* compare table ends */
