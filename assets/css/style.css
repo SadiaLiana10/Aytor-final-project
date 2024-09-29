@@ -2299,3 +2299,72 @@ footer .top-card span{
     color: var(--paragraph-color);
 }
 /* REVIEW ENDS */
+/* compare table */
+#table .tables{
+    justify-content: center;
+    display: flex;
+    height:5rem;
+    margin: 0;
+}
+#table #searchinput{
+    background-color: var(--border-clr);
+}
+#table input,#table button{
+    border: none;
+}
+#table button{
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    color: var(--cmn-clr);
+    background-color: var(--border-clr);
+    padding-right:13px;
+    font-size: 18px;
+}
+
+#table input::placeholder{
+    color: #828282;
+}
+#table .compare_remove th{
+  padding:40px 34px;
+}
+
+#table .compare_description th{
+    line-height: 156%;
+    vertical-align: middle;
+}
+#table .compare_description td{
+    font-family: var(--second-family);
+    line-height: 175%;
+    padding: 8px;
+}
+#table th,#table .compare_description th{
+    font-weight: 600;
+    font-size: 18px;  
+}
+#table .compare_products th{
+    padding:137px 30px;  
+}
+
+#table h4{
+    margin-top:15px;
+}
+#table img{
+    margin-top: 30px;
+}
+#table td,#table h4,#table input::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--paragraph-color);
+}
+.compare_button{
+    display: inline-block;
+    color:var(--bg-clr);
+    background-color: var(--cmn-clr);
+    padding:11px 25px;
+}
+#table th{
+    vertical-align: middle;
+}
+/* compare table ends */
