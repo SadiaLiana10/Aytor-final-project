@@ -54,3 +54,22 @@
  }
 
 }
+
+
+
+
+/* ABOUT CONFLICT */
+@media (max-width: 768px) { 
+  #service_conflict .about-img-shape:before {
+    height: 150px;
+    top: 30%;
+    width: 150px;
+  }
+  #service_conflict .about-shape {
+    width: 100%;
+  }
+  #service_conflict .mobile_service_conflict{
+   padding-top: 30px;
+  }
+}
+/* ABOUT CONFLICT END */
