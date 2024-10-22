@@ -79,7 +79,7 @@
                     <li><a href="./compare.html">Compare</a></li>
                     <li><a href="./cart.html">Cart</a></li>
                     <li><a href="./checkout.html">Checkout</a></li>
-                    <li><a href="./wishlist.html">Wishlist</a></li>
+                    <li><a href="#">Wishlist</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Newsletter</a></li>
@@ -224,92 +224,187 @@
      <section class="about">
         <div class="about-banner" style="background-image:linear-gradient(rgba(0,0,0,0.66),rgba(0,0,0,0.66)), url(./assets/img/banner2.jpg);">
            <div class="about-info">
-            <h3>Compare</h3>
-            <p>HOME / Compare Products</p>
+            <h3>Checkout</h3>
+            <p>Home  /  Checkout</p>
            </div>
         </div>
-
      </section>
     <!-- BANNER ENDS -->
-     
-    <!-- Table -->
-    <section id="cart">
-        <div class="container">
-          <div class="table-responsive">
-            <table class="table">
-              <thead class="cart_header">
-                <tr class="cart_head">
-                  <th scope="col">Image</th>
-                  <th scope="col">Product Name</th>
-                  <th scope="col">Price/Unit</th>
-                  <th scope="col">Quantity</th>
-                  <th scope="col">Total</th>
-                  <th scope="col">Remove</th>
-                </tr>
-              </thead>
-              <tbody class="products_info">
-                <tr class="product_info" >
-                  <td><img src="./assets/img/compare/Mask Here Image (2).png" alt=""></td>
-                  <td>
-                    <h3 style="font-weight: bold;">Jacket Hoodie Sweater</h3>
-                  </td>
-                  <td>
-                    <p>$130.00</p>
-                  </td>
-                  <!-- QUANTITY STARTS HERE -->
-                  <td>
-                    
-                        <div id="wrapper">
-                            <button class="dec" >-</button>
-                            <input  class="result" type="text" value="0">
-                            <button class="inc">+</button>
-                          </div>
-                      
-                        </td>
-                  <!-- QUANTITY ENDS HERE -->
-                  <td>
-                    <p>$130.00</p>
-                  </td>
-                  <td><span style="color: #FF6F61;font-size: 18px;"><i class="fa-solid fa-trash-can"></i></span></td>
-                </tr>
-            </tbody>
-            <thead class="cart_footer">
-                <tr class="product_btn" >
-                    <td colspan="3">
-                      <form action="">
-                        <input type="text" placeholder="Enter coupon code">
-                        <button>Submit &nbsp;<span><i class="fa-solid fa-arrow-right-long"></i></span></button>
-                      </form>
-                    </td>
-                    <td class="cart_btn " colspan="3">
-                      <button class="btn_two">Update Cart &nbsp;<span><i class="fa-solid fa-arrow-right-long"></i></span></button>
-                      <button>Continue Shopping &nbsp;<span><i class="fa-solid fa-arrow-right-long"></i></span></button>
-                    </td>
-                  </tr>
-            </thead>
-            </table>
+
+   <!-- checkout -->
+   <section id="checkout">
+    <div class="container py-5">
+        <div class="coupon">
+    
+            <ul>
+                <li><a href="#" style="color: #444444;margin-right: 15px;"><i class="fa-solid fa-circle-info"></i></a></li>
+                <li>
+                  <p>Have a coupon? <a href="#"><span style="color: #FF6F61;text-decoration: underline;">Click here to enter your code</span></a></p>
+                </li>
+              </ul>
+           </div>
+           <form action="" method="post">
+      <div class="formbox row">
+        <div class="billing_info col-lg-6">
+          <h2>Billing Information</h2>
+          <div class="namefill row">
+            <div class="first_name col-lg-6">
+              <label for="fname">First Name*</label>
+              <input type="text" id="fname" placeholder="Your first name...">
+            </div>
+            <div class="last_name col-lg-6">
+
+              <label for="lname">Last Name*</label>
+              <input type="text" id="lname" placeholder="Your last name...">
+            </div>
           </div>
-         <div class="row">
-          <div class="col-6"></div>
-          <div class="col-6 py-5">
-            <h2>Cart Total:</h2>
-            <div class="table-responsive row cart_table ">
-             <table class="table-bordered" style="border: 1px solid #E0E0E0;">
-              <tr >
-                <td style="width: 224px;background-color: #F1F3F4;" ><h3>Subtotal</h3></td>
-                <td><h3>$130.00</h3></td>
-              </tr>
-              <tr>
-                <td style="background-color: #F1F3F4;"><h3>Total</h3></td>
-                <td><h3>$130.00</h3></td>
-              </tr>
-             </table>
-            
+          <div class="company">
+              <label for="company">Company name (optional)*</label>
+              <input type="text" id="company" placeholder="Name...">
+            </div>
+          <div class="email">
+            <label for="email">Email*</label>
+            <input type="email" id="email" placeholder="youremail@gmail.com">
           </div>
-         </div>
+          <div class="number">
+            <label for="number">Telephone*</label>
+            <input type="number" id="number" placeholder="+123...">
+          </div>
+          <div class="country">
+            <label for="country">Country*</label>
+            <select name="" id="country">
+              <option value="">Select...</option>
+              <option value="">Select...</option>
+              <option value="">Select...</option>
+            </select>
+          </div>
+          <div class="address">
+            <label for="address">Street address*</label>
+            <input type="text" id="address" placeholder="House and street name...">
+            <input type="text" id="address" placeholder="Apartment, suite, unit, etc. (optional)">
+          </div>
+          <div class="town_city">
+            <label for="town/city">Town / City*</label>
+            <select name="" id="town/city">
+              <option value="">Select...</option>
+              <option value="">Select...</option>
+              <option value="">Select...</option>
+            </select>
+          </div>
+          <div class="post_code">
+            <label for="code">Post Code*</label>
+            <input type="number" id="code" placeholder="Code...">
+          </div>
+
         </div>
-      </section>
-     <!-- Table Ends-->
+        <div class="additional_info col-lg-6">
+          <h2>Additional Information</h2>
+          <label for="textarea">Order notes (optional)*</label>
+          <textarea name="" id="textarea" placeholder="Notes about your order, e.g. special notes for delivery." cols="85" rows="5"></textarea>
+        </div> 
+      </div>
+    </form>
+    <div id="cart">
+      <div class="container">
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="cart_header">
+              <tr class="cart_head">
+                <th scope="col">Image</th>
+                <th scope="col">Product Name</th>
+                <th scope="col">Price/Unit</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total</th>
+                
+              </tr>
+            </thead>
+            <tbody class="products_info">
+              <tr class="product_info" >
+                <td><img src="./assets/img/compare/Mask Here Image (2).png" alt=""></td>
+                <td>
+                  <h3 style="font-weight: bold;">Jacket Hoodie Sweater</h3>
+                </td>
+                <td>
+                  <p>$130.00</p>
+                </td>
+                <!-- QUANTITY STARTS HERE -->
+                <td>
+                  
+                      <div id="wrapper">
+                          <button class="dec" >-</button>
+                          <input  class="result" type="text" value="0">
+                          <button class="inc">+</button>
+                        </div>
+                    
+                      </td>
+                <!-- QUANTITY ENDS HERE -->
+                <td>
+                  <p>$130.00</p>
+                </td>
+                
+              </tr>
+              <tr class="total">
+                <td>Subtotal</td>
+                <td class="text-end" colspan="5">
+                  <p>$130.00</p>
+                </td>
+              </tr>
+              <tr class="total">
+                <td>Total</td>
+                <td class="text-end" colspan="5">
+                  <p style="color: #FF6F61;">$130.00</p>
+                </td>
+              </tr>
+          </tbody>
+       
+          </table>
+        </div>
+        <div class="payment">
+          <ul>
+            <li class="check"><i class="fa-solid fa-check"></i></li>
+            <li>
+              <h4>Direct bank transfer</h4>
+            </li>
+            <div class="info info_one">
+              <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference.
+                Your order will not be shipped until the funds have cleared in our
+                account.</p>
+            </div>
+          </ul>
+          <ul>
+            <li class="check"><i class="fa-solid fa-check"></i></li>
+            <li>
+              <h4>Check payments</h4>
+            </li>
+            <div class="info info_two">
+              <p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+            </div>
+          </ul>
+          <ul>
+            <li class="check"><i class="fa-solid fa-check"></i></li>
+            <li>
+              <h4>Cash on delivery</h4>
+            </li>
+            <div class="info info_three">
+              <p>Pay with cash upon delivery.</p>
+            </div>
+          </ul>
+          <ul class="pdata">
+            <li>
+              <p>Your personal data will be used to process your order, support your experience throughout this website,
+                and for other purposes described in our <span class="policy"><a href="#">privacy policy.</a></span></p>
+            </li>
+          </ul>
+        </div>
+      
+      </div>
+      <a class="paymentbtn" href="#">Place Order</a>
+          </div>
+
+</section>
+   <!-- checkout ends -->
+     
+    
 
      <!-- FOOTER -->
      <footer class="footer" style="background-image:linear-gradient(rgba(0,0,0,0.66),rgba(0,0,0,0.66)), url(./assets/img/cosmetic.jpg);">
